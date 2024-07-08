@@ -1,0 +1,55 @@
+/* <======== CSS Reset ========> */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  min-height: 100vh;
+  color: #000000;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.start-btn,
+.stop-btn {
+  padding: 7px 30px;
+  color: #000000;
+  background-color: transparent;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.start-btn:enabled:hover,
+.stop-btn:enabled:hover,
+.start-btn.active {
+  color: #FFFFFF;
+  background-color: gray;
+}
+
+.start-btn:disabled,
+.stop-btn:disabled {
+  cursor: not-allowed;
+}
+
+.transcribing-container {
+  max-width: 60%;
+}
